@@ -19,7 +19,7 @@ interface Navbar {
   dataLink: DataLinkItem[]
 }
 export default function NavBar({ dataLink, href}: Navbar) {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   const [bgcolor, setBgcolor] = useState(false);
   useEffect(() => {
     const handlescroll = () => {

@@ -17,7 +17,11 @@ const router = createBrowserRouter([
       { path: "contact", element: <Contact /> },
     ],
   },
-]);
+],
+{
+  basename: "/freedom", 
+}
+);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
